@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  server:
+    build: .
+    restars: always
+    ports:
+      -8081:8081
+    depends_on:
+      -mysqldb
+  mysqldb:
+    image: mysql:5.7   
+    restart: always
+    ports:
+      -3307:3306
+    environment:
+      MYSQL_DATABASE: pruebaxaldigital
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root   
