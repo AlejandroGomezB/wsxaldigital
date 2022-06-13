@@ -23,10 +23,11 @@ Los retos que puedo mencionar en la realización de esta prueba son:
 Para la visualizacion del contrato de interfaz por medio de la herramienta de swagger, se ingresara en la siguiente ruta una vez deployada la aplicacion wsxaldigital
 - Liga: http://localhost:8081/wsxaldigital/swagger-ui.html#/
 Nota: Remplazar por la direccion donde se encuentre la aplicación en caso de aplicar.
-## Intalación 
+## Intalación
+Para iniciar la instalación del servicio web, se debera primero crear la BD y sus respectivas tablas, para relazar esta acció se tocara a continaución
 ### Base de datos
-Para la configuracion de la conexion de base de datos, vamos a cambiar las credenciales por las que usamos en nuestro gestor de base de datos tanto en los archivos application.properties y en docker-compose.yml.
-A continuacion vamos a ejecutar el script que se encuentra en la raiz del proyecto para crear la BD y la insercion de algunos datos. El archivo se llama "Script.sql".
+Vamos a ejecutar en nuestro gestor de BD MySqlServer el script que se encuentra en la raiz del proyecto para crear la BD y la insercion de algunos datos. El archivo se llama "Script.sql".
+Para la configuracion de la conexion de base de datos, vamos a cambiar las credenciales por las que usamos en nuestro gestor de base de datos tanto en los archivos application.properties y en docker-compose.yml. 
 ### Puerto del servicio
 El Servicio se encuentra configurado para trabajar sobre el puerto 8081, en caso que desee cambiar el puerto lo podra hacer en el archivo application.properties en la propiedad server.port
 ### Ruta
